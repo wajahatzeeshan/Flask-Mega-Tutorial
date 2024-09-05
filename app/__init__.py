@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-app.config['DEBUG'] = True
+app.run(debug=True)
 
 from app import routes
 
