@@ -1,7 +1,8 @@
 import os
+from dotenv import load_dotenv
 
 ENVIRONMENT = 'development'
-FLASK_APP = 'my-app'
+#FLASK_APP = 'my-app'
 FLASK_DEBUG = True
 SECRET_KEY = 'GDtfD^&$%@^8tgYjD'
 class Config:
