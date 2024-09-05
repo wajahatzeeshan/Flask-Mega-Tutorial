@@ -12,10 +12,11 @@ class User(db.Model):
                                              unique=True)
     password_hash: so.Mapped[Optional[str]] = so.mapped_column(sa.String(256))
 
+    posts: so.WriteOnlyMapped['Post'] = so.relationship(
+        back_populates='author')
+
     def __repr__(self):
         return '<User {}>'.format(self.username)
-    
-    
 
 class Post(db.Model):
     id: so.Mapped[int] = so.mapped_column(primary_key=True)
