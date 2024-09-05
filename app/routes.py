@@ -3,7 +3,7 @@ from app import app
 from app.forms import LoginForm
 
 # ...
-
+@app.route('/')
 @app.route('/login')
 def login():
     form = LoginForm()
