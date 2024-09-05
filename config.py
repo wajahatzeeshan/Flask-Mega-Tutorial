@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__))  
 # ENVIRONMENT = 'development'
-# FLASK_APP = 'microblog.py'
+FLASK_APP = 'microblog.py'
 
 FLASK_DEBUG = True
 SECRET_KEY = 'GDtfD^&$%@^8tgYjD'
